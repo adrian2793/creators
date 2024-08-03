@@ -9,6 +9,12 @@ a {
 }
 
 button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: block;
 }
 
 input {
