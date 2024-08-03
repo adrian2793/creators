@@ -8,27 +8,16 @@ function insertHTML(_id, _content) {
 
 function connectToDatabase(_url, _user, _password) {
   fetch(`${_user}/data.js`)
-  .then((response) => response.json())
-  .then((posts) => {
+    .then((response) => response.json())
+  return response.json;
+
+function queryData(_id) {
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((results) => {
     container.innerHTML = "";
-    posts.forEach((post) => {
-      const div = cardTemplate.content.cloneNode(true);
-      div.getElementById("card-link").href = post.link;
-      div.getElementById("logo-img").src = post.logoImage;
-      div.getElementById("card-title").textContent = post.title;
-      div.getElementById("card-details").textContent = post.details;
-      div.getElementById("cover-img").src = post.coverImage;
-      div.getElementById(
-        "card-footer"
-      ).innerHTML = ` <ion-icon name="arrow-up"></ion-icon>
-          <ion-icon name="chatbox-ellipses"></ion-icon>
-          <ion-icon name="bookmark"></ion-icon>`;
-      container.append(div);
+    results.forEach((result) => {
+      alert(result);
     });
   });
- }
-
-
-
-
-
+}
