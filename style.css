@@ -12,7 +12,13 @@ button {
 }
 
 input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
   padding: 5px 0px 5px 0px;
+  border-radius: 15px;
 }
 
 
