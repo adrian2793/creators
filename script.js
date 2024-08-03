@@ -7,7 +7,7 @@ function insertHTML(_id, _content) {
 }
 
 function connectToDatabase(_url, _user, _password) {
-  fetch(`${_url}/${_user}/data.html?password=${_password}`)
+  fetch(`${_user}/data.js`)
   .then((response) => response.json())
   .then((posts) => {
     container.innerHTML = "";
