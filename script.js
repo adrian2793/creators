@@ -21,3 +21,5 @@ function queryData(_id) {
     });
   });
 }
+
+queryData(7);
