@@ -18,9 +18,9 @@ input {
   -ms-appearance: none;
   appearance: none;
   display: block;
-  padding: 5px 0px 5px 0px;
+  padding: 10px 0px 10px 0px;
   border: 1px solid black;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 
