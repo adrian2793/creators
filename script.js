@@ -6,13 +6,7 @@ function insertHTML(_id, _content) {
   }
 }
 
-function connectToDatabase(_url, _user, _password) {
-  fetch(`${_user}/data.js`)
-    .then((response) => response.json())
-  return response.json;
-}
-
-function queryData(_id) {
+function queryData() {
   fetch("data.json")
     .then((response) => response.json())
     .then((results) => {
@@ -23,4 +17,4 @@ function queryData(_id) {
   });
 }
 
-queryData(7);
+queryData();
