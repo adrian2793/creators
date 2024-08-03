@@ -10,6 +10,7 @@ function connectToDatabase(_url, _user, _password) {
   fetch(`${_user}/data.js`)
     .then((response) => response.json())
   return response.json;
+}
 
 function queryData(_id) {
   fetch("data.json")
